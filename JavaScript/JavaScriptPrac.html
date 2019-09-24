@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript</title>
+        <script>
+            function sayHello(who) {
+                document.write("Hello, " + who +"<br>");
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            var myVar = 5;
+            var num1 = 5;
+            var num2 = 3;
+            var total = ++num1/num2++ + num1*num2 - num1%num2;
+            var words = "This is";
+            var moreWords = " a sentence.";
+            var length = words.length;
+            var result = moreWords.substring(5, 9);
+            var sentence = words + moreWords;
+            var a = new Array(7);
+            a[0] = "cat";
+            a[1] = "dog";
+            a[2] = 95;
+            a[3] = "hey";
+            a[4] = true;
+            var b = ["cat", "dog", "pillow"];
+
+            document.write(sentence);
+            document.write("<br>");
+            sayHello("Bob");
+            if(myVar > 10) {
+                alert(myVar);
+            }
+            else if(words === "This is") {
+                alert(words);
+            }
+            for (var i=0; i<5; i++)
+            {
+                document.write("This is iteration " + i + "<br>");
+            }
+        </script>
+    </body>
+
+</html>
