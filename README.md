@@ -8,14 +8,7 @@ HTML             |  CSS
 PHP            |  JavaScript
 :-------------------------:|:-------------------------:
 ![](https://7php.com/pimg/2014/01/elephpant_281_193.png "PHP")  |  ![](http://juliandavis.com/wp-content/uploads/2018/01/Javascript-shield.png "JavaScript")
-
-
-![LCO Mascot](https://www.ionos.co.uk/digitalguide/fileadmin/DigitalGuide/Teaser/webentwicklung-t.jpg "Code")
-
-
->Keep learning because its a way of growth forever.
-
->Happy coding!
+> IDE used: [JetBrains WebStorm](https://www.jetbrains.com/webstorm/)
 ---
 
 
