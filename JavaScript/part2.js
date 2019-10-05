@@ -1,3 +1,4 @@
+// JavaScript Arrays: Properties, Methods, and Manipulation - part 1
 var string1 = "Test";
 var object1 = {'name': 'test'};
 var array1 = [0, 1, 2, 3, 4, 5];
