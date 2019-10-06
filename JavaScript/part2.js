@@ -1,42 +1,47 @@
-// JavaScript Arrays: Properties, Methods, and Manipulation - part 1
-var string1 = "Test";
-var object1 = {'name': 'test'};
-var array1 = [0, 1, 2, 3, 4, 5];
+// JavaScript Arrays: Properties, Methods, and Manipulation - part 2
 
-var testString = Array.isArray(string1);
-var testObj = Array.isArray(object1);
-var testArray = Array.isArray(array1);
+// toString()
 
-console.log(testArray);
+var array6 = ['This', 1, 'Time'];
+var string6 = array6.toString();
+console.log(string6);
 
-var array2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-var arrayLen;
-console.log(array2.length);
+// forEach()
 
-var sum = 0;
-for (var i = 0; i < array2.length; i++)
-    sum += array2[i];
-console.log(sum);
+var array7 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-var array3 = [1, 2, 3, 4, 5, 3, 4, 3, 1];
+function timesTen(element, index, array) {
+    array[index] = element * 10;
+}
 
-var indexOfThree = array3.indexOf(3);
-console.log(indexOfThree);
-console.log(array3.indexOf(3, 3));
-console.log(array3.lastIndexOf(3));
-console.log(array3.lastIndexOf(3, 6));
-console.log(array3.indexOf(0));
+console.log(array7);
+array7.forEach(timesTen);
+console.log(array7);
 
-var array4 = [1, 2, 3];
-array4.push(4);
-console.log(array4);
-array4.push(5);
-console.log(array4);
-array4.pop();
-console.log(array4);
+var array8 = [{name: 'Corey', age: 28}, {name: 'John', age: 52}, {name: 'Steve', age: 36}];
 
-var array5 = [1, 2, 3];
-array5.unshift(0);
-console.log(array5);
-array5.shift();
-console.log(array5);
+function listPeople(element, index, array) {
+    console.log((index + 1).toString() + '\t' + element.name + '\t' + element.age);
+}
+
+array8.forEach(listPeople);
+
+// reverse()
+
+array7.reverse();
+console.log(array7);
+
+// concat()
+
+array9 = [77, 88, 99];
+var arrayConcat = array7.concat(array9);
+console.log(arrayConcat);
+arrayConcat = arrayConcat.concat(1, 2, 3, ['d', 'e', 'f']);
+console.log(arrayConcat);
+
+// join()
+
+var string10 = array9.join('.');
+console.log(string10);
+var string11 = arrayConcat.join('--');
+console.log(string11);
