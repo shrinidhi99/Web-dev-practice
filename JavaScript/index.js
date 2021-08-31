@@ -1,1 +1,2 @@
-console.log("Hello World")
+const shri = require('./second');
+console.log("Hello World", shri);
