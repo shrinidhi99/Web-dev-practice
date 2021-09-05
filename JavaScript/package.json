@@ -1,5 +1,5 @@
 {
-  "name": "demo",
+  "name": "expresstut",
   "version": "1.0.0",
   "description": "Its an amazing package",
   "main": "index.js",
@@ -10,6 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "@angular/cli": "^12.2.3",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "learning"
   }
 }
