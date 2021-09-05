@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     blogs.forEach(e => {
-        console.log(e.title);   
+        console.log(e.title);
     });
     // res.sendFile(path.join(__dirname, '../templates/index.html'))
     res.render('home')
@@ -25,7 +25,11 @@ router.get('/blogpost/:slug', (req, res) => {
     })
 
     console.log(myBlog)
-    res.sendFile(path.join(__dirname, '../templates/blogpage.html'))
+    // res.sendFile(path.join(__dirname, '../templates/blogpage.html'))
+    res.render('blogpage', {
+        title: myBlog[0].title,
+        content: myBlog[0].content
+    });
 })
 
 module.exports = router
