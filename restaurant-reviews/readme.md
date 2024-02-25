@@ -53,4 +53,15 @@
     ```sh
     nodemon server
     ```
+    or
+    ```sh
+    node index
+    ```
 * For data access objects, create a subfolder called `dao/`.
+* Add the dao objects in the async client block once the connection has been established to mongodb. Without client injection to the DAO, the mongodb methods (insertOne, deleteOne, updateOne) will not work.
+* For methods for filtering based on query parameters, add a controller class in `/api`.
+* Create search index in Mongo Atlas:
+    - Database -> Browse collections -> Collections -> sample_restaurants -> Indexes
+    - Create index
+    - Give the name of the field and the type you want to send the input for searching
+* Deprecated ObjectID constructor: Now mongodb api has ObjectId and its constructor needs to be invoked with 'new'.
