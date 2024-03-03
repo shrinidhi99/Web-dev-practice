@@ -1,0 +1,14 @@
+{
+  "name": "chai-aur-code",
+  "version": "1.0.0",
+  "description": "This project is a part of learning [React](https://react.dev/) framework. This [playlist](https://www.youtube.com/playlist?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige) is being followed for the same.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-app": "^5.0.1"
+  }
+}
