@@ -25,4 +25,4 @@ npm run dev
 ```
 5. Remove some files that are not needed for now - (test files, css files).
 In `index.js`, delete the portions related to web vitals and index.css which was earlier deleted.
-In `app.js`, delete the portions related to App.css, logo and the App() rendering of <div>. Add a simple <h1> for now.
+In `app.js`, delete the portions related to App.css, logo and the App() rendering of html body. Add a simple heading for now.
