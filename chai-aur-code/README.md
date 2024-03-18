@@ -26,3 +26,11 @@ npm run dev
 5. Remove some files that are not needed for now - (test files, css files).
 In `index.js`, delete the portions related to web vitals and index.css which was earlier deleted.
 In `app.js`, delete the portions related to App.css, logo and the App() rendering of html body. Add a simple heading for now.
+
+## Working of the react projects:
+1. index.html is the root file from where the single page application loads and further manipulation to the DOM happens.
+2. In case of `01basicreact`, the `react-scripts` package binds the index.html with the index.js. In case of `01vitereact`, they have included the <script> tag in the index.html which would bind it to main.jsx file which would be an entry point for the single page application.
+3. ReactDOM creates a virtual DOM which React can use and selectively manipulate the DOMs that need to be updated.
+4. In vite project, there are some conventions that need to be followed, such as the exported module having an uppercase as the starting letter and the corresponding html also starting with an uppercase. Another convention is about the extension. It is by default configured to recognize only jsx files.
+5. Use `<> </>` to wrap the html body returned from the jsx script in case multiple elements are included in the body.
+6. If `npm run build/start` is not recognizing `react-scripts`, do `npm install` and it will fix the missing links that were already mentioned in the package.json but due to some reason went unrecognized.
