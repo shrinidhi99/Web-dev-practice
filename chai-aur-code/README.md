@@ -34,3 +34,8 @@ In `app.js`, delete the portions related to App.css, logo and the App() renderin
 4. In vite project, there are some conventions that need to be followed, such as the exported module having an uppercase as the starting letter and the corresponding html also starting with an uppercase. Another convention is about the extension. It is by default configured to recognize only jsx files.
 5. Use `<> </>` to wrap the html body returned from the jsx script in case multiple elements are included in the body.
 6. If `npm run build/start` is not recognizing `react-scripts`, do `npm install` and it will fix the missing links that were already mentioned in the package.json but due to some reason went unrecognized.
+
+## Projects
+- `01basicreact`: getting minimal react js app created using create-react-app, running in development environment.
+- `01vitereact`: getting minimal react js app created using vite bundler, running in development environment.
+- `02counter`: A simple react app to update counter to understand the concept of hooks which react uses to update the DOM (created using vite bundler). `useState` is a library that helps in doing this task.
