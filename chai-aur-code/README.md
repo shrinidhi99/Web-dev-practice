@@ -33,7 +33,7 @@ Install the dev dependencies for tailwind and its peers and initialize a config 
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
-Change the contents of the config file to include all template paths.
+Change the `contents` of the config file to include all template paths.
 ```css
 @tailwind base;
 @tailwind components;
@@ -49,6 +49,9 @@ Include the above lines in index.js of the root folder to add the tailwind direc
 5. Use `<> </>` to wrap the html body returned from the jsx script in case multiple elements are included in the body.
 6. If `npm run build/start` is not recognizing `react-scripts`, do `npm install` and it will fix the missing links that were already mentioned in the package.json but due to some reason went unrecognized.
 7. `React fibre`: An optimized algorithm by react to maintain the virtual DOM through reconciliation of the difference between the two DOMs (trees).
+8. `useCallback()` will return a memoized version of the callback that only changes if one of the inputs has changed.
+9. `useRef()` returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.
+10. `useEffect()` accepts a function that contains imperative, possibly effectful code.
 
 ## Projects
 - `01basicreact`: getting minimal react js app created using create-react-app, running in development environment.
@@ -56,3 +59,4 @@ Include the above lines in index.js of the root folder to add the tailwind direc
 - `02counter`: A simple react app to update counter to understand the concept of hooks which react uses to update the DOM (created using vite bundler). `useState` is a library that helps in doing this task.
 - `03tailwindprops`: A simple react app to understand tailwind and props.
 - `04bgChanger`: A simple react app to change background color of the web page.
+- `05passwordGenerator`: A simple react app to generate password to understand useEffect, useRef, and useCallback concepts.
