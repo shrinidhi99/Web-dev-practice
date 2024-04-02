@@ -55,3 +55,4 @@ Include the above lines in index.js of the root folder to add the tailwind direc
 - `01vitereact`: getting minimal react js app created using vite bundler, running in development environment.
 - `02counter`: A simple react app to update counter to understand the concept of hooks which react uses to update the DOM (created using vite bundler). `useState` is a library that helps in doing this task.
 - `03tailwindprops`: A simple react app to understand tailwind and props.
+- `04bgChanger`: A simple react app to change background color of the web page.
