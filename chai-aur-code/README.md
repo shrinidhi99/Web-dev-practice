@@ -39,7 +39,7 @@ Change the `contents` of the config file to include all template paths.
 @tailwind components;
 @tailwind utilities;
 ```
-Include the above lines in index.js of the root folder to add the tailwind directives.
+Include the above lines in index.css of the root folder to add the tailwind directives.
 
 ## Working of the react projects:
 1. index.html is the root file from where the single page application loads and further manipulation to the DOM happens.
@@ -60,3 +60,4 @@ Include the above lines in index.js of the root folder to add the tailwind direc
 - `03tailwindprops`: A simple react app to understand tailwind and props.
 - `04bgChanger`: A simple react app to change background color of the web page.
 - `05passwordGenerator`: A simple react app to generate password to understand useEffect, useRef, and useCallback concepts.
+- `06currencyConverter`: A simple react app to do conversion from one currency to another. In the process, the project would cover the concept called custom web hooks.
