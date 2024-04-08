@@ -41,6 +41,9 @@ Change the `contents` of the config file to include all template paths.
 ```
 Include the above lines in index.css of the root folder to add the tailwind directives.
 
+7. React Router DOM:
+npm install react-router-dom
+
 ## Working of the react projects:
 1. index.html is the root file from where the single page application loads and further manipulation to the DOM happens.
 2. In case of `01basicreact`, the `react-scripts` package binds the index.html with the index.js. In case of `01vitereact`, they have included the <script> tag in the index.html which would bind it to main.jsx file which would be an entry point for the single page application.
@@ -52,6 +55,9 @@ Include the above lines in index.css of the root folder to add the tailwind dire
 8. `useCallback()` will return a memoized version of the callback that only changes if one of the inputs has changed.
 9. `useRef()` returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.
 10. `useEffect()` accepts a function that contains imperative, possibly effectful code.
+11. In `react-router-dom`, `Link` gets the new page (internal routing) and replaces the DOM instead of reloading the page. `<a>` tag should not be used as it would reload the page. Link goes with `To` instead of an `href`. `NavLink` is a special type of Link which is used for navigation items, breadcrumbs and other such use cases where it is important to show the active part/page.
+`RouterProvider` tag in main.jsx file takes a `router` as a prop and the prop is of type `createBrowserRouter` which is part of react router dom. The path and the element to load can be defined in the router. The `Layout.jsx` file contains `Outlet` which will create space for child components to be loaded in the parent. `useParams` helps in getting the parameter passed (path variable) in the route.
+`loader` attribute in router can call a function asynchronously which returns a promise. This can be done to optimize the API fetching.
 
 ## Projects
 - `01basicreact`: getting minimal react js app created using create-react-app, running in development environment.
