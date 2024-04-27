@@ -77,3 +77,4 @@ In `Login.jsx`, we are trying to set a prop to the `UserContext`. In `Profile.js
 - `06currencyConverter`: A simple react app to do conversion from one currency to another. In the process, the project would cover the concept called custom web hooks.
 - `07reactRouter`: A simple react app to understand the working of a custom router, react router dom, link and navlink.
 - `08miniContext`: A simple react app to understand context API.
+- `09themeSwitcher`: A simple react app to understand how to pass, set and get a theme of an application using context API. This project showcases how custom functions can be written and passed to the provider as custom implementations. Add `darkMode: "class",` in the `tailwind.config.js` file to enable this feature for switching themes.
