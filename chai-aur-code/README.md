@@ -46,7 +46,7 @@ npm install react-router-dom
 
 ## Working of the react projects:
 1. index.html is the root file from where the single page application loads and further manipulation to the DOM happens.
-2. In case of `01basicreact`, the `react-scripts` package binds the index.html with the index.js. In case of `01vitereact`, they have included the <script> tag in the index.html which would bind it to main.jsx file which would be an entry point for the single page application.
+2. In case of `01basicreact`, the `react-scripts` package binds the index.html with the index.js. In case of `01vitereact`, they have included the `<script>` tag in the index.html which would bind it to main.jsx file which would be an entry point for the single page application.
 3. ReactDOM creates a virtual DOM which React can use and selectively manipulate the DOMs that need to be updated.
 4. In vite project, there are some conventions that need to be followed, such as the exported module having an uppercase as the starting letter and the corresponding html also starting with an uppercase. Another convention is about the extension. It is by default configured to recognize only jsx files.
 5. Use `<> </>` to wrap the html body returned from the jsx script in case multiple elements are included in the body.
@@ -58,6 +58,14 @@ npm install react-router-dom
 11. In `react-router-dom`, `Link` gets the new page (internal routing) and replaces the DOM instead of reloading the page. `<a>` tag should not be used as it would reload the page. Link goes with `To` instead of an `href`. `NavLink` is a special type of Link which is used for navigation items, breadcrumbs and other such use cases where it is important to show the active part/page.
 `RouterProvider` tag in main.jsx file takes a `router` as a prop and the prop is of type `createBrowserRouter` which is part of react router dom. The path and the element to load can be defined in the router. The `Layout.jsx` file contains `Outlet` which will create space for child components to be loaded in the parent. `useParams` helps in getting the parameter passed (path variable) in the route.
 `loader` attribute in router can call a function asynchronously which returns a promise. This can be done to optimize the API fetching.
+12. `Context API`: Context acts like a global storage where components can read and share data without directly passing it around. 
+- Why Use Context?
+    - Simplifies data sharing between components.
+    - Helps avoid “prop drilling” (passing props through many layers).
+    - Useful for theming, authentication, and more.
+
+Create `context` folder in `src`. Create `UserContext.js` and get the context from the react's `createContext()`. To get the providers, create `UserContextProvider.jsx`.
+In `Login.jsx`, we are trying to set a prop to the `UserContext`. In `Profile.jsx`, we aim to fetch the props using context API that was set in another component.
 
 ## Projects
 - `01basicreact`: getting minimal react js app created using create-react-app, running in development environment.
@@ -67,3 +75,5 @@ npm install react-router-dom
 - `04bgChanger`: A simple react app to change background color of the web page.
 - `05passwordGenerator`: A simple react app to generate password to understand useEffect, useRef, and useCallback concepts.
 - `06currencyConverter`: A simple react app to do conversion from one currency to another. In the process, the project would cover the concept called custom web hooks.
+- `07reactRouter`: A simple react app to understand the working of a custom router, react router dom, link and navlink.
+- `08miniContext`: A simple react app to understand context API.
