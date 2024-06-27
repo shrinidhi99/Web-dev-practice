@@ -63,3 +63,13 @@ docker push shrinidhi99/my-angular-app # Push the Image to Docker Hub
 docker pull shrinidhi99/my-angular-app # Pulling the Image from Docker Hub to the local machine
 docker run shrinidhi99/my-angular-app # Running the Image available on docker Hub
 ```
+
+### Docker compose for managing multiple containers
+We need to configure the containers in `docker-compose.yml` file.
+```sh
+docker-compose up # up starts the services defined in docker-compose.yml
+docker-compose down # To stop Docker Compose and remove containers, networks, and volumes
+```
+
+* `Local Development`: Docker Compose simplifies managing multi-container applications locally. You define all services (containers) and their configurations in a `docker-compose.yml` file. This includes specifying which Docker image to use for each service (`image: my-angular-app:latest`), setting environment variables, ports, volumes, dependencies between services, etc. You can then use docker-compose up to start all services defined in the file.
+* `Production and Deployment`: In production or any environment where Docker Compose isn't used, you typically use a different method for orchestrating containers, such as Kubernetes, Docker Swarm, or manual Docker run commands. Docker Compose is primarily for `local` development and `testing` environments.

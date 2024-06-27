@@ -1,0 +1,13 @@
+version: '3.8' # Version of the Docker Compose file syntax
+
+services: # Name of the service
+  angular-app:
+    image: shrinidhi99/my-angular-app:latest # Image name and tag from Docker Hub
+    container_name: my-angular-container # Optional: Name for the container
+    ports:
+      - "4000:4000" # Port mapping: host_port:container_port
+    environment:
+      - NODE_ENV=production # Example environment variable (optional)
+    restart: unless-stopped # Restart policy: always, unless-stopped, on-failure, etc.
+
+# Optional: Add more services like databases or additional microservices here
