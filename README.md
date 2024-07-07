@@ -5,3 +5,4 @@ These branches can be referred to follow the source code for the respective proj
 * [chai-aur-react](https://github.com/shrinidhi99/Web-Development-Learning/tree/chai-aur-react): React course from YouTube Chai aur react [playlist](https://www.youtube.com/playlist?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige).
 * [angular-dev](https://github.com/shrinidhi99/Web-Development-Learning/tree/angular-dev): A basic angular application to build, serve and dockerize it.
 * [express-dev](https://github.com/shrinidhi99/Web-Development-Learning/tree/express-dev): A basic express application to build, serve and dockerize it.
+* [mysql-docker](https://github.com/shrinidhi99/Web-Development-Learning/tree/mysql-docker): A basic set of instructions to follow to run a MySQL database in a docker container in the local machine.
