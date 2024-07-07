@@ -1,4 +1,4 @@
-# Instructions
+# Instructions: MySQL in docker container
 ## MySQL workbench
 This is a GUI tool to view the MySQL database running at any given host. It is recommended to be installed for better visualization.
 
@@ -77,6 +77,6 @@ docker run --name my-mysql-container -e MYSQL_ROOT_PASSWORD=my-password -e MYSQL
 ```
 ### To persist the volumne outside the lifecycle of a docker container:
 ```sh
-docker run --name my-mysql-container -e MYSQL_ROOT_PASSWORD=my-password -d -p 3306:3306 -v C:/mysql-data:/var/lib/mysql mysql:latest
+docker run --name my-mysql-container -e MYSQL_ROOT_PASSWORD=my-password -d -p 3306:3306 -v C:/local-docker-volumes/mysql-data:/var/lib/mysql mysql:latest
 ```
 The directory should be created before binding it to a docker volume.
