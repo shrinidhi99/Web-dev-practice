@@ -9,3 +9,4 @@ These branches can be referred to follow the source code for the respective proj
 * [postgresql-docker](https://github.com/shrinidhi99/Web-Development-Learning/tree/postgresql-docker): A basic set of instructions to follow to run a Postgresql database in a docker container in the local machine.
 * [mongo-docker](https://github.com/shrinidhi99/Web-Development-Learning/tree/mongo-docker): A basic set of instructions to follow to run a mongo db in a docker container in the local machine.
 * [redis-docker](https://github.com/shrinidhi99/Web-Development-Learning/tree/redis-docker): A basic set of instructions to follow to run a redis cache in a docker container in the local machine.
+* [react-docker](https://github.com/shrinidhi99/Web-Development-Learning/tree/react-docker): A basic react application to build, serve and dockerize it.
