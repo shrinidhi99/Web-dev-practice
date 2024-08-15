@@ -80,3 +80,31 @@ docker run --name my-mysql-container -e MYSQL_ROOT_PASSWORD=my-password -e MYSQL
 docker run --name my-mysql-container -e MYSQL_ROOT_PASSWORD=my-password -d -p 3306:3306 -v C:/local-docker-volumes/mysql-data:/var/lib/mysql mysql:latest
 ```
 The directory should be created before binding it to a docker volume.
+
+## Sakila DB
+Create a docker container with Sakila DB imported for use in sample projects:
+1. Download Sakila DB from the [official MySQL website](https://dev.mysql.com/doc/index-other.html)
+2. Extract the zip file and place it in a directory.
+3. Start a docker container with mounted volume and port exposed at 3306 with the official docker image of MySQL.
+```sh
+docker run --name my-mysql-sakila -e MYSQL_ROOT_PASSWORD=my-password -d -p 3306:3306 -v C:\data\mysql-sakila-data:/var/lib/mysql mysql:latest
+```
+4. Copy the files to docker container.
+```sh
+docker cp C:\data\sakila-db\sakila-schema.sql <container-id>:/tmp
+docker cp C:\data\sakila-db\sakila-data.sql <container-id>:/tmp
+```
+5. Verify the files within the docker container.
+```sh
+docker exec -it <container-id> bash
+```
+6. Import sakila files into the mysql db. Provide the root password of the container when prompted.
+```sh
+mysql -u root -p < /tmp/sakila-schema.sql
+mysql -u root -p < /tmp/sakila-data.sql
+```
+7. Open the database in MySQL workbench and run some queries to verify the import.
+```sql
+use sakila;
+select count(*) from actor;
+```
